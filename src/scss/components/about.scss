@@ -1,19 +1,20 @@
 .about-section {
-  scroll-margin-top: 76px;
+  background: #27273d;
 
   @include media(desktop) {
-    scroll-margin-top: 80px;
   }
 }
 
 .about-bg-wrapper {
-  padding-top: 26px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1440px;
   }
 }
@@ -23,47 +24,96 @@
   }
 }
 
-.about-title {
-  @include media(desktop) {
-  }
-}
-
 .about-content-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  gap: 42px;
 
   @include media(desktop) {
-    flex-direction: row-reverse;
-    gap: 60px;
+    flex-direction: row;
+  }
+}
+
+.about-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    min-width: 531px;
+    margin: 0;
   }
 }
 
 .about-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  @include media(desktop) {
+    max-width: 627px;
+  }
+}
+
+.about-title {
+  text-align: left;
+  margin-bottom: 42px;
 
   @include media(desktop) {
-    max-width: 671px;
+  }
+}
+
+.about-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include media(desktop) {
   }
 }
 
 .about-text {
   font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #151515;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.6;
   }
 }
 
-.about-img {
+.about-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
   @include media(desktop) {
-    min-width: 535px;
+  }
+}
+
+.about-list-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-item-circle {
+  background: #7b61ff;
+  border-radius: 16777200px;
+  min-width: 8px;
+  width: 8px;
+  height: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.about-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #fff;
+
+  @include media(desktop) {
   }
 }

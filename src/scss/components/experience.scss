@@ -1,15 +1,24 @@
 .experience-section {
+  @include media(desktop) {
+  }
 }
 
-.experience-bg-wrapper {
-  padding-top: 50px;
+.experience-section-wrapper {
+  padding-top: 40px;
+  padding-bottom: 40px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/experience/experience-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
 
   @include media(desktop) {
     padding-top: 100px;
+    padding-bottom: 100px;
     max-width: 1440px;
+    background-image: url(../img/experience/experience-bg-desk.jpg);
   }
 }
 
@@ -23,42 +32,72 @@
   }
 }
 
-.experience-content-wrapper {
+.experience-text {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 22px;
+
+  @include media(desktop) {
+  }
+}
+
+.experience-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 22px;
+  margin-bottom: 22px;
 
   @include media(desktop) {
     flex-direction: row;
-    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.experience-text-wrapper {
+.experience-list-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 22px;
+  padding: 21px;
+  width: 100%;
+  max-width: max-content;
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
 
   @include media(desktop) {
-    max-width: 671px;
   }
 }
 
-.experience-text {
+.experience-item-text {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  font-size: 14px;
-  color: #151515;
+  font-size: 18px;
+  line-height: 1.44444;
+  color: #fff;
 
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.6;
   }
 }
 
-.experience-img {
+.experience-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55556;
+  text-align: center;
+  color: #fff;
+
   @include media(desktop) {
-    min-width: 478px;
   }
 }
