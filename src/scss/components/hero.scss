@@ -94,24 +94,6 @@
   }
 }
 
-.hero-cta-link {
-  background: #7c62ff;
-  border-radius: 22px;
-  padding: 18px 36px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-
-  @include media(desktop) {
-  }
-}
-
 .hero-img {
   margin-left: auto;
   margin-right: auto;
